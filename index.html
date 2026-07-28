@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Ivan</title>
+    <meta name="description" content="Portfolio personal de Ivan" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- ===== Header ===== -->
+    <header class="header">
+      <nav class="container nav">
+        <a href="#" class="logo">Ivan</a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== Hero ===== -->
+      <section class="hero container">
+        <div class="hero-intro">
+          <p class="eyebrow">👋 Hola, soy Ivan</p>
+          <h1>Ivan</h1>
+          <h2>Backend Developer</h2>
+          <p class="hero-text">
+            Soy un desarrollador backend con experiencia en la creación de aplicaciones escalables y eficientes. Me apasiona resolver problemas complejos y optimizar el rendimiento de los sistemas.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">Ver proyectos</a>
+            <a class="btn btn-ghost" href="#contact">Contactar</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="images/IMG_3510 (1).JPG" alt="Ivan Padilla" class="hero-image" />
+          <div class="terminal-window" aria-hidden="true">
+            <div class="terminal-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="terminal-title">ivan@backend:~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="output">ivan — backend developer</p>
+              <p><span class="prompt">$</span> status</p>
+              <p class="output">disponible para nuevos proyectos<span class="cursor">_</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== About ===== -->
+      <section id="about" class="section container reveal">
+        <h3 class="section-title">Sobre mí</h3>
+        <p>
+          Soy desarrollador backend con experiencia en la creación de aplicaciones escalables y eficientes. Me apasiona resolver problemas complejos y optimizar el rendimiento de los sistemas. He trabajado con tecnologias como MongoDB, MySql, JavaFx, proyectos en Maven, proyectos con ORM y MVC. Tambien tengo conocimientos de Python y JavaScript. He desarrollado videojuegos 2D y 3D con Godot y Unity, y he trabajado en proyectos de inteligencia artificial y aprendizaje automático. He aprendido a crear programas Multihilo y Multiproceso, Programas en Red y algo sobre CiberSeguridad. Tambien he creado aplicaciones para Android con Kotlin en AndroidStudio. Me gusta aprender nuevas tecnologías y mejorar mis habilidades constantemente. Tambien tengo conociemientos de Odoo y he trabajado creando bot en Telegram y conectarlos con Odoo para tener un chatBot.Me considero una persona creativa, trabajadora y que siempre estoy aprendiendo nuevas tecnologias y formas de trabajo apra mejorar mis proyectos y habilidades. Estoy buscando oportunidades para crecer profesionalmente y contribuir a proyectos innovadores.
+        </p>
+      </section>
+
+      <!-- ===== Skills ===== -->
+      <section id="skills" class="section container reveal">
+        <h3 class="section-title">Skills</h3>
+        <div class="skills-grid">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Java</span>
+          <span class="tag">Python</span>
+          <span class="tag">Kotlin</span>          
+          <span class="tag">Unity</span>
+          <span class="tag">Godot</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Odoo</span>
+          <span class="tag">Git & GitHub</span>
+          <span class="tag">Figma</span>
+        </div>
+      </section>
+
+      <!-- ===== Projects ===== -->
+      <section id="projects" class="section container reveal">
+        <h3 class="section-title">Proyectos</h3>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </section>
+
+      <!-- ===== Contact ===== -->
+      <section id="contact" class="section container reveal">
+        <h3 class="section-title">Contacto</h3>
+        <p>¿Hablamos? Escríbeme y te respondo pronto.</p>
+        <div class="contact-links">
+          <a href="mailto:ivanpadillas006@gmail.com">ivanpadillas006@gmail.com</a>
+          <a href="https://www.linkedin.com/in/iv%C3%A1n-padilla-salda%C3%B1a-20126227a/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/ivanps006" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Ivan.</p>
+      </div>
+    </footer>
+
+    <script src="./js/projects.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+  </body>
+</html>
